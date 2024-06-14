@@ -21,7 +21,7 @@ public class OperativaImplementacion implements OperativaInterfaz {
 		String datoString ="";
 		String datoString2 = "";
 		LocalDate fechaHoyDate = LocalDate.now();
-		
+		System.out.println("Introduzca la matricula que desea consultar");
 		for(PropietarioDto propietarioDto : Inicio.LISTA_PROPIETARIO_DTOS) {
 			
 			System.out.println(propietarioDto.toString());
@@ -33,7 +33,7 @@ public class OperativaImplementacion implements OperativaInterfaz {
 		
 		
 		for(PropietarioDto propietarioDto : Inicio.LISTA_PROPIETARIO_DTOS) {
-			System.out.println("Introduzca la matricula que desea consultar");		
+					
 			String matriculaUsu= sc.next();
 			if(!matriculaUsu.equals(matriculaUsu)) {				
 				existe= true;
